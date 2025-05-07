@@ -20,11 +20,13 @@
     border-radius: 10px;
     position: relative;
     bottom: 10px;
-    left: 10%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: black;
     box-shadow: 3px 3px 5px black;
     transition: 1s all;
     display: flex;
+    z-index: 3;
 }
 
 .player:hover .controls, .player:focus .controls{
@@ -62,27 +64,84 @@ button:before {
 .timer div {
     background-color: rgba(255, 255, 255, 0.2);
     width: 0;
-    z-index: 2;
+    z-index: 5;
   }
   
 .timer span {
-    z-index: 3;
+    z-index: 4;
   }
 
 .player {
     width: 75%;
     height: auto;
+    margin: 0 auto;
+    position: relative;
 }
 
 .videoplayer{
     width: 100%;
-    margin: 0 auto; 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     display: flex;
-    align-self: center;
+    align-self: center;   
+    z-index: 5; 
 }
+
 
 body {
     width: 100%;
     height: auto;
+    position: relative;
+    background: url("Asset/Img/Backgroundimggg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.synopsisglobal {
+    display: flex;
+}
+
+#textSynopsis {
+    align-self: center;
+}
+
+#synopsis {
+    align-self: center;
+    border-radius: 20px;
+}
+
+
+.principalCaracters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.principalCaracters figure img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.principalCaracters figure figcaption{
+    text-align: center;
+    font-size: 20px;
+}
+
+.Explaination {
+    display: flex;
+    justify-content: center;
+}
+
+body.shadow::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
