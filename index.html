@@ -13,9 +13,48 @@
       alt="Affiche Gran Turismo"
     />
     <div>
-        <button id="synopsis">Afficher / cacher le synopsis</button>
-        <p id="textSynopsis">Le jeune Jann Mardenborough meurt d'envie d'être pilote de course, mais n'a pas les moyens financiers de faire partie du sport d'élite. C'est pourquoi il n'a appuyé sur l'accélérateur que dans le jeu vidéo Gran Turismo et a connu un énorme succès. Alors qu'il remporte de plus en plus de compétitions, il a enfin la chance de devenir pilote professionnel sur du vrai asphalte. Cependant, le circuit automobile est tout sauf bienveillant face à la nouvelle compétition.</p>
+      <button id="synopsis">Afficher / cacher le synopsis</button>
+      <p id="textSynopsis">
+        Le jeune Jann Mardenborough meurt d'envie d'être pilote de course, mais
+        n'a pas les moyens financiers de faire partie du sport d'élite. C'est
+        pourquoi il n'a appuyé sur l'accélérateur que dans le jeu vidéo Gran
+        Turismo et a connu un énorme succès. Alors qu'il remporte de plus en
+        plus de compétitions, il a enfin la chance de devenir pilote
+        professionnel sur du vrai asphalte. Cependant, le circuit automobile est
+        tout sauf bienveillant face à la nouvelle compétition.
+      </p>
     </div>
+    <div class="player">
+      <video class="videoplayer"controls>
+        <source
+        src="Vidéo/Gran Turismo - Bande-annonce officielle.mp4"
+        type="video/mp4"
+        />
+        <source
+        src="Vidéo/Gran Turismo - Bande-annonce officielle.mp4"
+        type="video/webm"
+        />
+      </video>
+    </div>
+    
+    <div class="controls">
+      <button
+        class="play"
+        data-icon="P"
+        aria-label="bascule lecture pause"
+      ></button>
+      <button class="stop" data-icon="S" aria-label="stop"></button>
+
+      <div class="timer">
+        <div></div>
+        <span aria-label="timer">00:00</span>
+      </div>
+
+      <button class="rwd" data-icon="B" aria-label="retour arrière"></button>
+      <button class="fwd" data-icon="F" aria-label="avance rapide"></button>
+    </div>
+
     <script src="script.js"></script>
+    <script src="custom-player.js"></script>
   </body>
 </html>
