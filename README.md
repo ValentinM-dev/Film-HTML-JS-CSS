@@ -7,8 +7,8 @@ Projet d'examen ou de démonstration d’un lecteur vidéo personnalisé réalis
 ## 🎥 Fonctionnalités actuelles
 
 - ▶️ **Lecture**, ⏸️ **pause**, ⏹️ **arrêt** de la vidéo
-- 🖱️ **Interface utilisateur personnalisée**
-- 🌐 **Compatibilité multi-navigateurs**
+- **Interface utilisateur personnalisée**
+- **Compatibilité multi-navigateurs**
 
 ---
 
@@ -32,10 +32,14 @@ Ce projet a pour ambition d’évoluer avec les fonctionnalités suivantes :
 
 ---
 
-## 🌿 Branchement `develop`
+## 🌿 Branch `develop`
 
 > ⚠️ La branche `develop` contient la **version la plus complète** du projet :
 >
 > - Tous les **assets** nécessaires (vidéos, images, etc.).
 > - Des **mises à jour** sur les fichiers HTML, CSS et JavaScript.
 > - Une meilleure **organisation des fichiers**.
+
+---
+
+⚠️ Le contenu de ce dossier sera régulièrement mis à jour.
