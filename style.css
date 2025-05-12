@@ -104,6 +104,7 @@ body {
 
 #textSynopsis {
     align-self: center;
+    color: white;
 }
 
 #synopsis {
@@ -127,6 +128,7 @@ body {
 .principalCaracters figure figcaption{
     text-align: center;
     font-size: 20px;
+    color: white;
 }
 
 .Explaination {
