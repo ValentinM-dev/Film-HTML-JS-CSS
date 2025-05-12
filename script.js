@@ -3,4 +3,6 @@ const synospis = document.getElementById("synopsis");
 
 synospis.addEventListener("click",() => {
     textSynopsis.classList.toggle("hidden")
+    synospis.classList.toggle("hidden")
 })
+

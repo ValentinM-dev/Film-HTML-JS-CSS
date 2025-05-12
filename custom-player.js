@@ -9,6 +9,7 @@ var fwd = document.querySelector(".fwd");
 var timerWrapper = document.querySelector(".timer");
 var timer = document.querySelector(".timer span");
 var timerBar = document.querySelector(".timer div");
+var body = document.querySelector("body");
 
 media.removeAttribute("controls");
 controls.style.visibility = "visible";
@@ -23,9 +24,12 @@ function playPauseMedia() {
   if (media.paused) {
     play.setAttribute("data-icon", "u");
     media.play();
+    body.classList.add("shadow");
+
   } else {
     play.setAttribute("data-icon", "P");
     media.pause();
+    body.classList.remove("shadow");
   }
 }
 
@@ -40,6 +44,7 @@ function stopMedia() {
   media.pause();
   media.currentTime = 0;
   play.setAttribute("data-icon", "P");
+  body.classList.remove("shadow");
 }
 
 rwd.addEventListener("click", mediaBackward);
@@ -121,3 +126,4 @@ function setTime() {
     timerWrapper.clientWidth * (media.currentTime / media.duration);
   timerBar.style.width = barLength + "px";
 }
+
